@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container my-5">
+    <h1 class="mb-4">Latest News</h1>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <!-- Main News Item -->
+            <article class="card mb-4">
+                <img src="data:image/jpeg;base64,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HDIcCoXc+Dbl8Qx9vuLOW15OuXPM0n+EHoNu4GVMVnJ9UlsNKsq/Di+TzySfG08bXYGlr3b49fVSDgzg2awzST1lSJpnDG2dvxUz75WEHrC5vmZIMse0tcPZQ6p4Trooo4KOpbIyN5LZZJ3h4H8o7Dt09ApYiTKzxLJfUDrODrxUSykTUjI5BvGXF2o/4nEZK5I8OeIGDRFcKRnfIB3+qtPJxjKJcrSSRAqTgu5NoaajqqhrGMn5kpjkLhL6Zae49VOKeIQxNjHRowvRFFesEgjeC4AjuPUKFXng2te94tdcBC6TWOc92pg38rewAyegUwO/VZztjsrLZ4WbVdN4c3mRz3OqaQtO7QdR0qW8HcNt4eo3RukEkzzl7gMBSRYTdNPWnk5cgcRkdCFCL7wTVz1ckturYWxPdlrJWnLR6KZLOSktniWbVs/gK9GSNzamiY1o3aM4PqdvdSnhTh0WKneHP1zSu1PcB1UgWO2FblaSQWvd7bS3qiFLWaxpyWPjJDm5G/zHsVsJgLKobJwTcYnZoL00s7CaPB9RnB7LzuPCV0rLNSUJmpmyUz3mOUF2G6iMYH4qbgkdCmd8rX5VPxiuaHwye52q53R0uTqcGN6n3J3U1s9moLPTCCggZG3G5A3cfUldE79VhRWVhEUGVhEQETKICIiAiIgIiICJlEBERAREygJhEQETKICImUBERATCZRAREygIiICIiAiZKIMosJlAREQEREBZWEQZWERAREQEREBERAREQEREBERAREQEREBERAREQEREGVhEQEREBERARERREREEREBERAREQEREBERARERREREEREBERAREQEREBERAREQEREH/2Q==" class="card-img-top" alt="News">
+                <div class="card-body">
+                    <h2 class="card-title">Breaking News Headline</h2>
+                    <p class="text-muted">Published on January 15, 2024</p>
+                    <p class="card-text">This is the main news article content. It provides important information about current events and developments.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </article>
+
+            <!-- News Item 2 -->
+            <article class="card mb-4">
+                <img src="https://via.placeholder.com/800x400" class="card-img-top" alt="News">
+                <div class="card-body">
+                    <h3 class="card-title">Important Update Announcement</h3>
+                    <p class="text-muted">Published on January 14, 2024</p>
+                    <p class="card-text">Another significant news story that updates readers about recent developments and important announcements.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </article>
+
+            <!-- News Item 3 -->
+            <article class="card mb-4">
+                <img src="https://via.placeholder.com/800x400" class="card-img-top" alt="News">
+                <div class="card-body">
+                    <h3 class="card-title">Community News and Events</h3>
+                    <p class="text-muted">Published on January 13, 2024</p>
+                    <p class="card-text">Stay informed about local community events, updates, and news that matter to you.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Featured Stories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Top Story 1</a></li>
+                        <li><a href="#" class="text-decoration-none">Top Story 2</a></li>
+                        <li><a href="#" class="text-decoration-none">Top Story 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
